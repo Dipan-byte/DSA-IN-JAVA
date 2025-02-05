@@ -35,9 +35,16 @@ public class max_min_term{
         Scanner input=new Scanner(System.in);
         System.out.print("ENTER THE ARRAY SIZE : ");
         int size = input.nextInt();
-        int array[] = arrayinput(size , input);
-        printarray(array , size);
-        sortarray(array , size);
+
+        if(size < 1) 
+            System.out.println("Bhag");
+        else {
+            int array[] = arrayinput(size , input);
+            printarray(array , size);
+            sortarray(array , size);
+        }
+
+       
         input.close();
     }
     }

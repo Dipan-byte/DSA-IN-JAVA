@@ -19,9 +19,16 @@ public class inputoutput{
     public static void main(String args[]){
         Scanner sc= new Scanner(System.in);
         System.out.print("ENTER THE ARRAY SIZE : ");
-        int size= sc.nextInt();
-        String array[] = arrayinput(size , sc);
-        arraypaste(array , size );
+        //int size= sc.nextInt();
+
+        String str = sc.next();
+
+            System.out.printlny("ENTER THE ARRAY SIZE : " + str);
+
+
+
+        //String array[] = arrayinput(size , sc);
+       // arraypaste(array , size );
         sc.close();
     }
     
