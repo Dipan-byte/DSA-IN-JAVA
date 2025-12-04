@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class MissingNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int[] arr = new int[n - 1];
+
+        int sum = n * (n + 1) / 2;
+        int arrSum = 0;
+
+        for (int i = 0; i < n - 1; i++) {
+            arr[i] = sc.nextInt();
+            arrSum += arr[i];
+        }
+
+        System.out.println("Missing Number: " + (sum - arrSum));
+    }
+}
